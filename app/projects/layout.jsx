@@ -1,0 +1,19 @@
+// generate layour with footer
+import Footer from "@/components/Footer";
+import PropTypes from "prop-types";
+
+export const metadata = {
+  title: "Raofun | Projects"
+};
+export default function Layout({ children }) {
+  return (
+    <>
+      {children}
+      <Footer />
+    </>
+  );
+}
+
+Layout.propTypes = {
+	children: PropTypes.node.isRequired,
+};
