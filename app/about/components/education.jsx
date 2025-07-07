@@ -1,14 +1,10 @@
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faMedal,
 	faTrophy,
 	faAward,
-	faChevronDown,
-	faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
 import Me4 from "@/public/image/piel5.jpg";
 import Me5 from "@/public/image/piel8.jpg";
 import Me6 from "@/public/image/piel6.jpg";
@@ -44,8 +40,6 @@ Wrapper.propTypes = {
 };
 
 export default function Education() {
-	const [isExpanded, setIsExpanded] = useState(false);
-
 	const achievementsByYear = {
 		
         2025: [
@@ -134,18 +128,6 @@ export default function Education() {
         
 	};
 
-	// Flatten all achievements into a single array for easier limiting
-	const allAchievements = Object.entries(achievementsByYear)
-		.sort(([a], [b]) => parseInt(b) - parseInt(a))
-		.flatMap(([year, achievements]) =>
-			achievements.map((achievement) => ({ ...achievement, year }))
-		);
-
-	const visibleAchievements = isExpanded
-		? allAchievements
-		: allAchievements.slice(0, 6);
-	const hasMoreAchievements = allAchievements.length > 6;
-
 	return (
 		<Wrapper>
 			<section className="grid gap-8 md:gap-12">
@@ -210,8 +192,8 @@ export default function Education() {
 							</div>
 							<div className="flex items-center gap-2">
 								<p className="text-gray-600 text-justify title text-lg">
-									Aspiring to become a professional Software Engineer, I&rsquo;m
-									currently pursuing my Bachelor&rsquo;s degree in{" "}
+									Aspiring to become a professional Software Engineer, I&apos;m
+									currently pursuing my Bachelor&apos;s degree in{" "}
 									<span className="text-black font-medium">
 										Software Engineering
 									</span>{" "}
@@ -223,7 +205,7 @@ export default function Education() {
 									interest in using new technologies from childhood and with growing age
 									it has become a passion.{" "}
 									<br />
-									<br />I'm deeply driven to tackle real-world challenges
+									<br />I&apos;m deeply driven to tackle real-world challenges
 									through technology, particularly where{" "}
 									<span className="text-black font-medium">
 										Cyber Security, Development and Programming
