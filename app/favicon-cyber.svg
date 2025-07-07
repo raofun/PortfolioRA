@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0066cc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#001a33;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00cc66;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="#0a0a0a" stroke="#333" stroke-width="1"/>
+  
+  <!-- Shield outline -->
+  <path d="M16 3 L24 7 L24 15 C24 21 16 27 16 27 C16 27 8 21 8 15 L8 7 Z" 
+        fill="url(#shieldGradient)" stroke="#00d4ff" stroke-width="0.5"/>
+  
+  <!-- Lock icon inside shield -->
+  <rect x="13" y="13" width="6" height="6" rx="1" fill="#001a33" stroke="#00d4ff" stroke-width="0.5"/>
+  <path d="M14 13 V11 C14 9.9 14.9 9 16 9 C17.1 9 18 9.9 18 11 V13" 
+        fill="none" stroke="#00d4ff" stroke-width="0.8"/>
+  <circle cx="16" cy="16" r="1" fill="#00d4ff"/>
+  
+  <!-- Code brackets -->
+  <path d="M6 12 L4 16 L6 20" fill="none" stroke="url(#codeGradient)" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M26 12 L28 16 L26 20" fill="none" stroke="url(#codeGradient)" stroke-width="1.2" stroke-linecap="round"/>
+  
+  <!-- Binary code pattern -->
+  <text x="10" y="25" font-family="monospace" font-size="3" fill="#00ff88" opacity="0.6">101</text>
+  <text x="19" y="25" font-family="monospace" font-size="3" fill="#00ff88" opacity="0.6">010</text>
+  
+  <!-- Subtle circuit pattern -->
+  <g opacity="0.3">
+    <line x1="6" y1="8" x2="10" y2="8" stroke="#00d4ff" stroke-width="0.3"/>
+    <line x1="22" y1="8" x2="26" y2="8" stroke="#00d4ff" stroke-width="0.3"/>
+    <circle cx="10" cy="8" r="0.5" fill="#00d4ff"/>
+    <circle cx="22" cy="8" r="0.5" fill="#00d4ff"/>
+  </g>
+</svg>

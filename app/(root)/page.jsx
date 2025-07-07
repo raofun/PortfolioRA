@@ -12,11 +12,9 @@ import Setup from "@/public/image/setup.jpg";
 import ProjectAll from "@/public/image/projects.png";
 import Hr from "@/components/Hr";
 // icons
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faLinkedin, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
 
 const COLORS = {
 	primary: "#1e293b", // slate-800
@@ -42,6 +40,7 @@ const MyPage = () => {
 		licenseKey: "gplv3-license",
 		menu: "#sidebar",
 		lockAnchors: false,
+        //hideAnchors: true,
 	};
 
 	return (

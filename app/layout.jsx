@@ -32,6 +32,12 @@ export const metadata = {
 		"raofun web developer",
 	],
 
+	icons: {
+		icon: "/favicon-code.svg",
+		shortcut: "/favicon-code.svg",
+		apple: "/favicon-code.svg",
+	},
+
 	openGraph: {
 		type: "website",
 		url: "https://www.raofun.vercel.app",
