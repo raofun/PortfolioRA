@@ -1,9 +1,10 @@
 import Image from "next/image";
-import {
+/*import {
 	faMedal,
 	faTrophy,
 	faAward,
 } from "@fortawesome/free-solid-svg-icons";
+ */
 import { motion } from "framer-motion";
 import Me4 from "@/public/image/piel5.jpg";
 import Me5 from "@/public/image/piel8.jpg";
@@ -40,7 +41,8 @@ Wrapper.propTypes = {
 };
 
 export default function Education() {
-	const achievementsByYear = {
+	/*
+    const achievementsByYear = {
 		
         2025: [
 			{
@@ -127,6 +129,7 @@ export default function Education() {
 		],
         
 	};
+    */
 
 	return (
 		<Wrapper>
@@ -323,7 +326,8 @@ export default function Education() {
 		</Wrapper>
 	);
 }
+/*
 Education.propTypes = {
 	children: PropTypes.node.isRequired,
 };
-
+*/
