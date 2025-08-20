@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
@@ -12,21 +12,11 @@ import ReactChat3 from "@/public/image/projects/web/grocery/Picture3.jpg";
 import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
-import ProjectCard from "./components/ProjectCard";
-import Projects from "@/json/data.json";
 import FixedButon from "@/components/FixedButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-const category = {
-	1: "Web Development",
-	2: "AI & Machine Learning",
-	9: "Other",
-};
-
 export default function Page() {
-	const [activeCategory, setActiveCategory] = useState(1);
-	const projects = Projects.Projects.filter((item) => item.show === true);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -313,7 +303,7 @@ export default function Page() {
 							The system facilitates networking opportunities, career development, and ongoing engagement through features like 
 							alumni directory, event management, job portal, and mentorship programs. Built with modern web technologies, 
 							it enables alumni to update their profiles, share achievements, participate in university events, and contribute 
-							to current students' success. The platform also provides analytics for university administrators to track alumni 
+							to current students&apos; success. The platform also provides analytics for university administrators to track alumni 
 							engagement and measure the impact of various programs, fostering a vibrant alumni community.
 						</p>
 						<div className="mt-3">
@@ -402,7 +392,7 @@ export default function Page() {
 						</div>
 						<div className="p-4 bg-gray-50 flex justify-center">
 							<p className="text-sm text-gray-600 mr-4">
-								Can't see the PDF? 
+								Can&apos;t see the PDF? 
 							</p>
 							<Button variation="secondary">
 								<a 
